@@ -8,6 +8,8 @@ pipeline{
         }
         stage('continuous build'){
             steps{
+                sh 'sudo apt install nodejs -y'
+                sh 'sudo apt install npm -y'
                 sh 'npm install'
                 sh 'npm run'
             }
