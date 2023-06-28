@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('continuous download'){
             steps{
-                sh 'https://github.com/gopal887/react.js.git'
+                 git branch: 'master',url: 'https://github.com/gopal887/react.js.git'
             }
         }
     }
